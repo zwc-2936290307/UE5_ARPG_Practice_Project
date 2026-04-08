@@ -21,6 +21,7 @@ Saved/
 *.editorconfig
 .vsconfig
 shadertoolsconfig.json
+_DemoVideo.mp4
 
 # 忽略脚本和日志
 *.bat
