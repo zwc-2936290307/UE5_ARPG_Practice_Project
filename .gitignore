@@ -1,0 +1,33 @@
+# 忽略编译和编辑器生成的文件
+Binaries/
+DerivedDataCache/
+Content/
+Intermediate/
+Saved/
+
+# 忽略 IDE 和系统文件
+.vs/
+.idea/
+.vscode/
+*.sln
+*.suo
+*.user
+*.userprefs
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.DS_Store
+*.editorconfig
+.vsconfig
+shadertoolsconfig.json
+
+# 忽略脚本和日志
+*.bat
+*.log
+*.tmp
+
+# 忽略项目生成文件
+.vscode/
+*_BuiltData.uasset
+*_BuiltData.umap

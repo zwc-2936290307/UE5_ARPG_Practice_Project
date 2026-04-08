@@ -1,0 +1,34 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Blueprint/UserWidget.h"
+#include "AncientOverlay.generated.h"
+
+/**
+ * 
+ */
+class UProgressBar;
+class UTextBlock;
+
+UCLASS()
+class ANCIENT_API UAncientOverlay : public UUserWidget
+{
+	GENERATED_BODY()
+public:
+	void SetHealthBarPercent(float Percent);
+	void SetStaminaBarPercent(float Percent);
+	void SetGoldText(int32 Gold);
+	void SetSoulText(int32 Soul);
+private:
+	UPROPERTY(meta = (BindWidget))
+	UProgressBar* HealthProgressBar = nullptr;
+	UPROPERTY(meta = (BindWidget))
+	UProgressBar* StaminaProgressBar = nullptr;
+
+	UPROPERTY(meta = (BindWidget))
+	UTextBlock* GoldText = nullptr;
+	UPROPERTY(meta = (BindWidget))
+	UTextBlock* SoulText = nullptr;
+};
